@@ -66,13 +66,13 @@ Given that the zero rate is 50% the classifier is in this case not very good, as
 
 ## Task 2 - Effects of preprocessing
 Almost all of this task is exactly the same as in task 1. However, in this case, when structuring the data, these parameters are added to the 'CountVectorizer()' function:
-- max_df=0.7
+- max_df=0.8
 - min_df=30
 - stop_words='english'
 
 This ensures that words used very frequently or very rarely are cut out. The same goes for stopdwords
 ```python
-cv = CountVectorizer(max_df=0.7, min_df=30, stop_words='english')
+cv = CountVectorizer(max_df=0.8, min_df=30, stop_words='english')
 ```
 Other than this slight change, nothing has been changed from the previous task.
 ### Results
